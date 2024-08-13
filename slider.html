@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car-slidser</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" />
+    <style>
+        * {
+            margin-top:20px;
+        }
+
+        img {
+            width: 100%;
+            height: 570px;
+            object-fit: cover;
+        }
+
+        .bx-wrapper {
+            border: none;
+            box-shadow: none;
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 30px;
+            width: 0;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            height: 25px;
+            width: 25px;
+            margin: 5px;
+            background-color: red;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+
+
+    <div class="homeSlider">
+        <div class="slider">
+            <img src="innova-hycross-1-2.avif"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="g-wagon.jpg"
+                alt="">
+        </div>
+        <div class="slider">
+            <img src="rolls roy.jpg" alt="">
+        </div>
+        <div class="slider">
+            <img src="jguar.jpg" alt="">
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $(".homeSlider").bxSlider({
+                mode: "fade",
+                auto: "true"
+            })
+        })
+    </script>
+</body>
+
+</html>

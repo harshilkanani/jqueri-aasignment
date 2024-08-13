@@ -1,0 +1,90 @@
+Q-1 What is jQuery?
+-->jQuery is a fast, small, and feature-rich JavaScript library. 
+
+===============================================================================================================================
+
+Q-2 How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery , JQuery Animation?
+-->addClass() - Adds one or more classes to the selected elements.
+  removeClass() - Removes one or more classes from the selected elements.
+  toggleClass() - Toggles between adding/removing classes from the selected elements.
+  css() - Sets or returns the style attribute.
+
+===============================================================================================================================
+
+Q 3 How to  create slider with animation?
+
+-->The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+
+    The optional callback parameter is a function to be executed after the sliding completes.
+
+    The following example demonstrates the slideDown() method:
+
+
+     Examples
+     jQuery slideDown()
+     Demonstrates the jQuery slideDown() method.
+
+      jQuery slideUp()
+      Demonstrates the jQuery slideUp() method.
+
+     jQuery slideToggle()
+     Demonstrates the jQuery slideToggle() method.
+
+   Example:1
+
+    $("#flip").click(function(){
+    $("#panel").slideDown();
+    });
+
+
+  *******SLIDE UP**********
+
+   jQuery slideUp() Method
+
+   Example:
+       Slide-up (hide) all <p> elements:
+
+      $("button").click(function(){  
+    $("p").slideUp();
+     });
+
+*******SLIDE DOWN*********
+
+   jQuery slideDown() Method
+
+   Example:
+    Slide-down (show) all hidden <p> elements:
+
+      $("button").click(function(){
+      $("p").slideDown();
+       });
+
+*****SLIDE TOGGLE******
+
+   jQuery slideToggle() Method
+
+   Example:
+  Toggle between slideUp() and slideDown() for all <p> elements:
+
+   $("button").click(function(){
+  $("p").slideToggle();
+   });
+
+
+  The jQuery animate() method is used to create custom animations.
+
+   Syntax:
+
+     $(selector).animate({params},speed,callback);
+    The required params parameter defines the CSS properties to be animated.
+
+    The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.
+
+     The optional callback parameter is a function to be executed after the animation completes.
+
+    The following example demonstrates a simple use of the animate() method; it moves a <div> element to the right, until it has reached a left property of 250px:
+
+     Example:
+          $("button").click(function(){
+        $("div").animate({left: '250px'});
+        });
